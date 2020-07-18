@@ -20,7 +20,7 @@ public class InterviewTaskApplication {
 	}
 
 	private void initApplication() {
-		ApplicationTrayIcon trayIcon = new ApplicationTrayIcon(Toolkit.getDefaultToolkit().getImage(System.getProperty("user.dir") + "\\src\\main\\resources\\bulb.gif"));
+		ApplicationTrayIcon trayIcon = new ApplicationTrayIcon(Toolkit.getDefaultToolkit().getImage(getClass().getResource("/bulb.gif")));
 		SystemTray tray = SystemTray.getSystemTray();
 		try {
 			tray.add(trayIcon);
